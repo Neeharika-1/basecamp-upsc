@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Base Camp — UPSC Prep Tracker</title>
+<meta name="description" content="A personal dashboard for UPSC Civil Services preparation — syllabus tracker, planner, current affairs log, test scores and habits.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%230b1220%22/><path d=%22M50 22 L74 70 L26 70 Z%22 fill=%22none%22 stroke=%22%23e2a03f%22 stroke-width=%226%22 stroke-linejoin=%22round%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scrim" id="scrim"></div>
+
+<div class="app">
+
+  <!-- Mobile top bar -->
+  <div class="topbar">
+    <span class="brand-mark">BASE<span class="dot">·</span>CAMP</span>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">BASE<span class="dot">·</span>CAMP</div>
+      <div class="brand-tagline">UPSC preparation, tracked.</div>
+      <div class="brand-candidate" id="candidateLine" style="display:none;">Aspirant — <strong id="candidateName"></strong></div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <button class="nav-item active" data-view="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="7" height="7" rx="1.3"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.3"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.3"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.3"/></svg>
+        Dashboard
+      </button>
+      <button class="nav-item" data-view="syllabus">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.2C4 4.5 4.6 4 5.3 4H12v16H5.3c-.7 0-1.3-.5-1.3-1.2V5.2Z"/><path d="M20 5.2c0-.7-.6-1.2-1.3-1.2H12v16h6.7c.7 0 1.3-.5 1.3-1.2V5.2Z"/></svg>
+        Syllabus
+      </button>
+      <button class="nav-item" data-view="planner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="4.5" width="17" height="16" rx="1.6"/><path d="M3.5 9.5h17M8 3v3M16 3v3"/></svg>
+        Planner
+      </button>
+      <button class="nav-item" data-view="affairs">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 5.5h11a2 2 0 0 1 2 2V19H6.5a2 2 0 0 1-2-2V5.5Z"/><path d="M17.5 8.5H19a1 1 0 0 1 1 1V17a2 2 0 0 1-2 2"/><path d="M7.5 9h5M7.5 12h5M7.5 15h3"/></svg>
+        Current Affairs
+      </button>
+      <button class="nav-item" data-view="tests">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 20V4.5M4.5 20h15.5"/><rect x="7.5" y="13" width="3" height="7"/><rect x="12.5" y="9" width="3" height="11"/><rect x="17.5" y="6" width="3" height="14"/></svg>
+        Test Scores
+      </button>
+      <button class="nav-item" data-view="goals">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.3"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg>
+        Goals &amp; Habits
+      </button>
+      <button class="nav-item" data-view="settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="2.6"/><path d="M19.4 13.6a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V19.6a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H4.4a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34H10.5a1.7 1.7 0 0 0 1-1.55V4.4a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87V10.5a1.7 1.7 0 0 0 1.55 1h.09a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
+        Settings
+      </button>
+    </nav>
+
+    <div class="nav-footer">Data lives in this browser only. Export a backup from Settings now and then.</div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- DASHBOARD -->
+    <section class="view active" id="view-dashboard">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow" id="todayLabel">—</div>
+          <h1 id="greeting">Dashboard</h1>
+        </div>
+      </div>
+
+      <div class="hero" id="heroBlock"></div>
+
+      <div class="grid-stats" id="statTiles"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <h2>Today's plan</h2>
+            <button class="btn btn-sm" data-goto="planner">Open planner</button>
+          </div>
+          <div class="list" id="todayTasks"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3>Log a study session</h3>
+          </div>
+          <form class="form-grid" id="quickLogForm">
+            <div class="field">
+              <label for="qlSubject">Subject</label>
+              <input id="qlSubject" placeholder="e.g. Polity" required>
+            </div>
+            <div class="field">
+              <label for="qlMinutes">Minutes</label>
+              <input id="qlMinutes" type="number" min="1" max="900" placeholder="60" required>
+            </div>
+            <div class="field field-wide">
+              <label for="qlNote">Note (optional)</label>
+              <input id="qlNote" placeholder="What did you cover?">
+            </div>
+            <div class="field field-wide">
+              <button class="btn btn-primary btn-block" type="submit">Log session</button>
+            </div>
+          </form>
+
+          <div class="card-head" style="margin-top:1.1rem;">
+            <h3>Recent sessions</h3>
+          </div>
+          <div class="list" id="recentSessions"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h2>Syllabus progress</h2><button class="btn btn-sm" data-goto="syllabus">Open syllabus</button></div>
+        <div id="dashSyllabusBars"></div>
+      </div>
+    </section>
+
+    <!-- SYLLABUS -->
+    <section class="view" id="view-syllabus">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow">Syllabus</div>
+          <h1>Coverage &amp; revision</h1>
+          <p>Check off a topic once you've studied it. Tap the revision badge each time you go back over it — most toppers clear the static syllabus three times before Mains.</p>
+        </div>
+      </div>
+
+      <div class="overall-progress">
+        <div class="bar-track"><div class="bar-fill" id="overallBarFill" style="width:0%"></div></div>
+        <div class="pct num" id="overallPct">0%</div>
+      </div>
+
+      <div id="syllabusAccordion"></div>
+    </section>
+
+    <!-- PLANNER -->
+    <section class="view" id="view-planner">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow">Planner</div>
+          <h1>Tasks &amp; schedule</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <form class="form-grid" id="taskForm">
+          <div class="field field-wide">
+            <label for="tTitle">Task</label>
+            <input id="tTitle" placeholder="e.g. Revise Mughal administration" required>
+          </div>
+          <div class="field">
+            <label for="tDate">Date</label>
+            <input id="tDate" type="date" required>
+          </div>
+          <div class="field">
+            <label for="tSubject">Subject</label>
+            <input id="tSubject" placeholder="e.g. History">
+          </div>
+          <div class="field">
+            <label for="tPriority">Priority</label>
+            <select id="tPriority">
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+          <div class="field">
+            <button class="btn btn-primary btn-block" type="submit">Add task</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Overdue</h3></div>
+        <div class="list" id="taskOverdue"></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>Today</h3></div>
+        <div class="list" id="taskToday"></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>Upcoming</h3></div>
+        <div class="list" id="taskUpcoming"></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>Completed</h3></div>
+        <div class="list" id="taskDone"></div>
+      </div>
+    </section>
+
+    <!-- CURRENT AFFAIRS -->
+    <section class="view" id="view-affairs">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow">Current Affairs</div>
+          <h1>Daily diary</h1>
+          <p>A running log of what you read today — this becomes your revision material before Prelims and your examples for Mains answers.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <form class="form-grid" id="caForm">
+          <div class="field field-wide">
+            <label for="caTitle">Headline / topic</label>
+            <input id="caTitle" placeholder="e.g. RBI's new repo rate decision" required>
+          </div>
+          <div class="field">
+            <label for="caDate">Date</label>
+            <input id="caDate" type="date" required>
+          </div>
+          <div class="field">
+            <label for="caCategory">Category</label>
+            <select id="caCategory">
+              <option>Polity</option>
+              <option>Economy</option>
+              <option>International Relations</option>
+              <option>Environment</option>
+              <option>Science &amp; Tech</option>
+              <option>Society</option>
+              <option>Miscellaneous</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="caNotes">Notes</label>
+            <textarea id="caNotes" placeholder="Key points, source, why it matters"></textarea>
+          </div>
+          <div class="field field-wide">
+            <button class="btn btn-primary btn-block" type="submit">Add entry</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="toolbar">
+        <select id="caFilter">
+          <option value="">All categories</option>
+          <option>Polity</option>
+          <option>Economy</option>
+          <option>International Relations</option>
+          <option>Environment</option>
+          <option>Science &amp; Tech</option>
+          <option>Society</option>
+          <option>Miscellaneous</option>
+        </select>
+      </div>
+
+      <div class="list" id="caList"></div>
+    </section>
+
+    <!-- TEST SCORES -->
+    <section class="view" id="view-tests">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow">Test Scores</div>
+          <h1>Mocks &amp; test series</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <form class="form-grid" id="testForm">
+          <div class="field">
+            <label for="tsDate">Date</label>
+            <input id="tsDate" type="date" required>
+          </div>
+          <div class="field">
+            <label for="tsType">Type</label>
+            <select id="tsType">
+              <option>Prelims Mock</option>
+              <option>Mains — GS1</option>
+              <option>Mains — GS2</option>
+              <option>Mains — GS3</option>
+              <option>Mains — GS4</option>
+              <option>Mains — Essay</option>
+              <option>Mains — Optional</option>
+              <option>Sectional Test</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tsLabel">Test name</label>
+            <input id="tsLabel" placeholder="e.g. Vision IAS GS-4">
+          </div>
+          <div class="field">
+            <label for="tsScore">Score</label>
+            <input id="tsScore" type="number" step="0.01" required>
+          </div>
+          <div class="field">
+            <label for="tsMax">Out of</label>
+            <input id="tsMax" type="number" step="0.01" required>
+          </div>
+          <div class="field field-wide">
+            <button class="btn btn-primary btn-block" type="submit">Add score</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Score trend</h3></div>
+        <div class="chart-wrap" id="scoreChart"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>All attempts</h3></div>
+        <div style="overflow-x:auto;">
+          <table class="data" id="scoreTable">
+            <thead><tr><th>Date</th><th>Type</th><th>Name</th><th class="num">Score</th><th class="num">%</th><th></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOALS & HABITS -->
+    <section class="view" id="view-goals">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow">Goals &amp; Habits</div>
+          <h1>The rest of the routine</h1>
+          <p>Prep is a marathon — sleep, exercise and the goals outside the syllabus matter too.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h2>Habits this week</h2>
+          <button class="btn btn-sm" id="addHabitBtn" data-action="add-habit">+ Add habit</button>
+        </div>
+        <div class="habit-grid" id="habitGrid"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h2>Goals</h2></div>
+        <form class="form-grid" id="goalForm">
+          <div class="field field-wide">
+            <label for="gTitle">Goal</label>
+            <input id="gTitle" placeholder="e.g. Finish NCERT Class XI Geography" required>
+          </div>
+          <div class="field">
+            <label for="gDate">Target date</label>
+            <input id="gDate" type="date">
+          </div>
+          <div class="field">
+            <button class="btn btn-primary btn-block" type="submit">Add goal</button>
+          </div>
+        </form>
+        <div class="list" id="goalList" style="margin-top:0.9rem;"></div>
+      </div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section class="view" id="view-settings">
+      <div class="view-head">
+        <div>
+          <div class="eyebrow">Settings</div>
+          <h1>Your setup</h1>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Profile</h3></div>
+        <form class="form-grid" id="settingsForm">
+          <div class="field">
+            <label for="sName">Your name</label>
+            <input id="sName" placeholder="e.g. Aditi">
+          </div>
+          <div class="field">
+            <label for="sExamDate">Prelims date</label>
+            <input id="sExamDate" type="date">
+          </div>
+          <div class="field field-wide">
+            <label for="sOptional">Optional subject</label>
+            <input id="sOptional" placeholder="e.g. Sociology, Public Administration, Geography…">
+          </div>
+          <div class="field field-wide">
+            <button class="btn btn-primary btn-block" type="submit">Save settings</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>Your data</h3></div>
+        <p>Everything is stored only in this browser (localStorage) — nothing is sent anywhere. Export a backup file regularly, especially before clearing your browser data or switching devices.</p>
+        <div class="settings-actions">
+          <button class="btn" id="exportBtn">Export backup (.json)</button>
+          <button class="btn" id="importBtn">Import backup</button>
+          <input type="file" id="importFile" accept="application/json" style="display:none;">
+          <button class="btn btn-danger" id="resetBtn">Reset all data</button>
+        </div>
+        <p class="hint">Importing replaces everything currently stored in this browser with the contents of the backup file.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
