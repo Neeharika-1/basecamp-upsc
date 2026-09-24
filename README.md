@@ -85,7 +85,19 @@ That means:
 - **Rename the app:** search for `BASE` / `Base Camp` in `index.html`
   and `script.js` and replace with whatever you like.
 - **Colors:** all in the `:root { ... }` block at the top of `style.css`
-  (`--saffron`, `--sage`, `--ink-*`, etc.).
+  (`--saffron`, `--sage`, `--ink-*`, etc.) — currently a bright pink/joyful
+  palette; swap the hex values there to retheme the whole app.
+- **Optional subject syllabus:** type your optional's name in
+  **Settings → Optional subject** and save. The single "Mains — Optional"
+  slot automatically splits into **Optional Paper I** and **Optional
+  Paper II**. For commonly chosen optionals (Public Administration,
+  Sociology, Geography, History, Political Science & IR, Anthropology,
+  Economics, Philosophy) the standard topic headings are pre-loaded for
+  you automatically; any other subject still gets the two-paper
+  structure, just empty for you to fill in. This only auto-fills once —
+  it never overwrites topics you've already checked, noted, or added
+  yourself. See `OPTIONAL_SYLLABI` near the top of `script.js` to add
+  pre-loaded topics for more subjects.
 - **Syllabus content:** edit the `defaultSyllabus()` function near the
   top of `script.js`. This only affects the *default* list shown to new
   visitors — once you've started checking things off, your saved data in
@@ -103,7 +115,7 @@ That means:
 - The Prelims exam date isn't hardcoded (the syllabus structure is
   stable, but exam dates shift every year) — set your own target date in
   **Settings** to drive the countdown on the dashboard.
-- Fonts (Spectral, IBM Plex Sans, IBM Plex Mono) load from Google Fonts.
-  If you'd rather not depend on that, they're easy to remove from the
+- Fonts (Fredoka, Quicksand, IBM Plex Mono) load from Google Fonts. If
+  you'd rather not depend on that, they're easy to remove from the
   `<link>` tags in `index.html` — the app will just fall back to system
   fonts.

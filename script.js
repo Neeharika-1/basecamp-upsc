@@ -11,7 +11,7 @@
   const DEFAULT_HABITS = ["Exercise", "Reading (non-UPSC)", "Sleep 7+ hrs"];
   const VIEWS = ["dashboard", "syllabus", "planner", "affairs", "tests", "goals", "settings"];
   const TRASH_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M9 6V4.5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V6m-9 0 .6 12.4a1.5 1.5 0 0 0 1.5 1.4h5.8a1.5 1.5 0 0 0 1.5-1.4L19 6"/></svg>';
-  const CHECK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="#0b1220" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
+  const CHECK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff9fc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>';
 
   let state;
 
@@ -194,6 +194,161 @@
   }
 
   /* ---------------------------------------------------------------------
+     Optional-subject syllabi — top-level UPSC topic headings for the
+     most commonly chosen optionals. Every optional has exactly two
+     papers. Subjects not listed here still get a proper two-paper
+     structure, just with an empty topic list to fill in yourself.
+     --------------------------------------------------------------------- */
+
+  const OPTIONAL_SYLLABI = {
+    "public administration": {
+      1: ["Administrative Theory — evolution, schools & principles", "Administrative Thought — Woodrow Wilson to modern theorists",
+        "Administrative Behaviour — decision-making, communication, morale", "Organisations — structures, systems & management theories",
+        "Accountability & Control — legislative, executive & judicial", "Administrative Law", "Comparative Public Administration",
+        "Development Dynamics & Administration", "Personnel Administration", "Public Policy — formulation & implementation",
+        "Techniques of Administrative Improvement", "Financial Administration — budgeting & audit"],
+      2: ["Evolution of Indian Administration", "Philosophical & Constitutional framework of government",
+        "Public Sector Undertakings", "Union Government & Management", "Plans & Priorities in India",
+        "State Government & Management", "District Administration since Independence",
+        "Civil Services in India", "Financial Management in India", "Administrative Reforms since Independence",
+        "Rural & Urban Local Government", "Law & Order Administration", "Significant Issues in Indian Administration"]
+    },
+    "sociology": {
+      1: ["Sociology — the Discipline (scope, comparison with other disciplines)", "Sociology as Science — methods of inquiry",
+        "Research Methods & Analysis", "Sociological Thinkers — Marx, Durkheim, Weber & others",
+        "Stratification & Mobility", "Works & Economic Life", "Politics & Society", "Religion & Society",
+        "Systems of Kinship", "Social Change in Modern Society"],
+      2: ["Rural & Agrarian Social Structure in India", "Caste System & its changing nature",
+        "Tribal communities in India", "Social Classes in India", "Systems of Kinship in India",
+        "Religion & Society in India", "Population Dynamics & demographic transition",
+        "Challenges of Social Transformation — crime, violence, illiteracy, poverty",
+        "Rural & Urban Transformation in India", "Social Movements in Modern India"]
+    },
+    "geography": {
+      1: ["Physical Geography — Geomorphology", "Physical Geography — Climatology",
+        "Physical Geography — Oceanography", "Physical Geography — Biogeography",
+        "Physical Geography — Environmental Geography", "Human Geography — Perspectives, thought & migration",
+        "Economic Geography — resources, agriculture & industry", "Population & Settlement Geography",
+        "Regional Planning", "Models, Theories & Laws in Human Geography"],
+      2: ["Physical Setting of India", "Resources of India", "Agriculture in India",
+        "Industry in India", "Transport, Communication & Trade in India", "Cultural Setting of India",
+        "Settlements in India", "Regional Development & Planning in India", "Political Aspects of Indian Geography",
+        "Contemporary Issues — environmental hazards, regional disparity, urban problems"]
+    },
+    "history": {
+      1: ["Sources & Pre-history", "Indus Valley Civilization", "Megalithic & Vedic Societies",
+        "Buddhist & Jain movements & Mauryan Empire", "Post-Mauryan India", "Guptas & post-Gupta period",
+        "Regional cultures & Southern dynasties", "Medieval India — Delhi Sultanate & Mughals",
+        "18th century — decline of the Mughal Empire", "Modern World — Enlightenment to World Wars"],
+      2: ["European penetration & British conquest of India", "British Administration & economic policies",
+        "Social & Religious reform movements in 19th-century India", "Indian National Movement — 1885–1947",
+        "Constitutional developments & Partition", "Post-Independence Consolidation",
+        "India's Foreign Policy", "Emergence of a New Social Structure",
+        "World History — colonialism & decolonization", "World History — Cold War & new international order"]
+    },
+    "political science and international relations": {
+      1: ["Political Theory & its Tradition", "Theories of the State", "Justice, Equality, Rights & Democracy",
+        "Concepts of Power, Hegemony, Ideology & Legitimacy", "Political Ideologies — liberalism, socialism, Marxism, Gandhism",
+        "Indian Political Thought", "Western Political Thought", "Indian Government & Politics — Constitution",
+        "Indian Government & Politics — Organs & institutions", "Grassroots Politics & Social Movements in India"],
+      2: ["Comparative Political Analysis & Political Systems", "Globalisation & its critics",
+        "Approaches to the Study of International Relations", "Key concepts in International Relations",
+        "Changing International Political Order", "Evolution of the International Economic System",
+        "United Nations & other international institutions", "India & its Neighbours",
+        "India & major world powers / regions", "India & the UN, WTO, disarmament & global commons"]
+    },
+    "anthropology": {
+      1: ["Meaning, Scope & Development of Anthropology", "Human Evolution & Primatology",
+        "Concept of Race & racial classification", "Fundamentals of Culture & Society",
+        "Marriage, Family & Kinship", "Economic & Political Organisation", "Religion & Society",
+        "Anthropological Theories", "Culture, Language & Communication", "Research Methods in Anthropology"],
+      2: ["Evolution of Indian Society — Palaeolithic to modern", "Demographic profile of India",
+        "Elements of Indian Village, Tribal & Peasant society", "Structure & Nature of Tribal Society in India",
+        "Impact of Hinduism, Buddhism, Islam & Christianity on tribal societies", "Emergence of Man in India",
+        "Tribal situation in India — problems & development", "Impact of Modernisation on Tribal societies",
+        "Role of Anthropology in Tribal & Rural Development", "Contributions of Anthropologists to Indian society"]
+    },
+    "economics": {
+      1: ["Advanced Micro Economics — theory of consumer & producer behaviour", "Theory of General Equilibrium",
+        "Welfare Economics", "Theories of Growth", "Advanced Macro Economics",
+        "Money, Banking & Finance", "International Economics", "Public Finance",
+        "Development & Planning experience of India"],
+      2: ["Indian Economy in pre-independence era", "Indian Economy since Independence — planning strategy",
+        "Growth, Development & Structural change", "Population & poverty in India",
+        "Agriculture & rural development in India", "Industry in India", "Foreign trade of India",
+        "Money & Banking in India", "Public Finance in India", "Current developments in the Indian economy"]
+    },
+    "philosophy": {
+      1: ["Plato to Kant — Western Philosophy", "Hegel, Marx, Nietzsche & Existentialism",
+        "Analytic Philosophy — Russell, Wittgenstein, logical positivism", "Phenomenology & Sartre",
+        "Charvaka, Jaina & Buddhist Philosophy", "Nyaya-Vaisesika, Samkhya & Yoga", "Mimamsa & Vedanta",
+        "Aurobindo, Radhakrishnan, Gandhi & the concept of man"],
+      2: ["Philosophy of religion — nature of religious experience", "Concept of God & problem of evil",
+        "Logic & knowledge — non-cognitivism, means of knowledge", "Socio-political Philosophy — nature & justification of the state",
+        "Justice, equality, rights & duties", "Human destiny — bondage, liberation, happiness",
+        "Religion & morality", "Ethics & society — applied ethics, human rights, environmental ethics"]
+    }
+  };
+
+  function findOptionalSyllabus(subject) {
+    if (!subject) return null;
+    const key = subject.trim().toLowerCase();
+    if (OPTIONAL_SYLLABI[key]) return OPTIONAL_SYLLABI[key];
+    // loose aliasing for common short forms
+    const aliases = {
+      "psir": "political science and international relations",
+      "pol sci": "political science and international relations",
+      "political science": "political science and international relations",
+      "pub ad": "public administration",
+      "public ad": "public administration",
+      "geo": "geography",
+      "anthro": "anthropology",
+      "history optional": "history"
+    };
+    if (aliases[key] && OPTIONAL_SYLLABI[aliases[key]]) return OPTIONAL_SYLLABI[aliases[key]];
+    return null;
+  }
+
+  /* ---------------------------------------------------------------------
+     Splits the single generic "Mains — Optional" slot into a proper
+     two-paper structure the moment a candidate names their optional
+     subject in Settings, pre-loading topics for the subjects we know.
+     Safe to call repeatedly — never overwrites topics a candidate has
+     already checked, noted, or added themselves.
+     --------------------------------------------------------------------- */
+
+  function ensureOptionalPapers(subject) {
+    const list = state.syllabus;
+    const legacyIdx = list.findIndex(p => p.key === "m_optional");
+    const hasSplit = list.some(p => p.key === "m_optional_1");
+    const known = findOptionalSyllabus(subject);
+
+    if (legacyIdx !== -1 && !hasSplit) {
+      const legacy = list[legacyIdx];
+      const paper1 = { key: "m_optional_1", title: "Mains — Optional Paper I", topics: legacy.topics.slice() };
+      const paper2 = { key: "m_optional_2", title: "Mains — Optional Paper II", topics: [] };
+      if (known && paper1.topics.length === 0) paper1.topics = known[1].map(topic);
+      if (known && paper2.topics.length === 0) paper2.topics = known[2].map(topic);
+      list.splice(legacyIdx, 1, paper1, paper2);
+      state.ui.openPapers.m_optional_1 = true;
+      state.ui.openPapers.m_optional_2 = true;
+      return true;
+    }
+
+    if (hasSplit && known) {
+      // Already split — only fill in topics if the candidate hasn't added any of their own yet.
+      let filled = false;
+      const p1 = list.find(p => p.key === "m_optional_1");
+      const p2 = list.find(p => p.key === "m_optional_2");
+      if (p1 && p1.topics.length === 0) { p1.topics = known[1].map(topic); filled = true; }
+      if (p2 && p2.topics.length === 0) { p2.topics = known[2].map(topic); filled = true; }
+      return filled;
+    }
+
+    return false;
+  }
+
+  /* ---------------------------------------------------------------------
      State: defaults, load, save
      --------------------------------------------------------------------- */
 
@@ -260,16 +415,18 @@
   }
 
   function paperDisplayTitle(paper) {
-    if (paper.key === "m_optional" && state.settings.optionalSubject) {
-      return `Mains — Optional (${state.settings.optionalSubject})`;
-    }
+    const subj = state.settings.optionalSubject;
+    if (paper.key === "m_optional" && subj) return `Mains — Optional (${subj})`;
+    if (paper.key === "m_optional_1") return subj ? `Optional Paper I (${subj})` : "Mains — Optional Paper I";
+    if (paper.key === "m_optional_2") return subj ? `Optional Paper II (${subj})` : "Mains — Optional Paper II";
     return paper.title;
   }
 
   function paperShortLabel(paper) {
-    if (paper.key === "m_optional") {
-      return state.settings.optionalSubject ? `Optional — ${state.settings.optionalSubject}` : "Optional";
-    }
+    const subj = state.settings.optionalSubject;
+    if (paper.key === "m_optional") return subj ? `Optional — ${subj}` : "Optional";
+    if (paper.key === "m_optional_1") return subj ? `Optional I — ${subj}` : "Optional Paper I";
+    if (paper.key === "m_optional_2") return subj ? `Optional II — ${subj}` : "Optional Paper II";
     return paper.title.replace(/^Prelims — /, "P · ").replace(/^Mains — /, "M · ");
   }
 
@@ -925,9 +1082,19 @@
       state.settings.name = document.getElementById("sName").value.trim();
       state.settings.examDate = document.getElementById("sExamDate").value;
       state.settings.optionalSubject = document.getElementById("sOptional").value.trim();
+
+      let msg = "Settings saved";
+      if (state.settings.optionalSubject) {
+        const filled = ensureOptionalPapers(state.settings.optionalSubject);
+        const known = findOptionalSyllabus(state.settings.optionalSubject);
+        if (filled && known) msg = `Settings saved — ${state.settings.optionalSubject} syllabus added`;
+        else if (filled) msg = "Settings saved — optional split into Paper I & II";
+      }
+
       saveState();
       updateSidebarCandidate();
-      toast("Settings saved");
+      if (document.getElementById("view-syllabus").classList.contains("active")) renderSyllabus();
+      toast(msg);
     });
   }
 

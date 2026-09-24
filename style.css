@@ -1,46 +1,47 @@
 /* ==========================================================================
    BASE CAMP — UPSC preparation tracker
-   Design: dark "field ledger" theme. Navy ink base, saffron for progress
-   and primary action, sage for completion, rose for overdue, steel-blue
-   for informational accents. Serif (Spectral) for headings, grotesk
-   (IBM Plex Sans) for interface text, mono (IBM Plex Mono) for every
-   number, date and stat — this is a dashboard built for measurement.
+   Design: light "joyful pink" theme. Blush-white base, hot pink for
+   progress and primary action, minty teal for completion, coral for
+   overdue, violet for informational accents. Rounded display (Fredoka)
+   for headings, friendly grotesk (Quicksand) for interface text, mono
+   (IBM Plex Mono) for every number, date and stat — still a dashboard
+   built for measurement, just a much brighter one.
    ========================================================================== */
 
 :root {
   /* -- palette -- */
-  --ink-950: #0b1220;
-  --ink-900: #121b2c;
-  --ink-800: #1c2842;
-  --ink-700: #2a3a58;
-  --ink-600: #3c4f73;
+  --ink-950: #fff0f6;
+  --ink-900: #ffffff;
+  --ink-800: #ffe6f1;
+  --ink-700: #ffc3de;
+  --ink-600: #ff9dc9;
 
-  --paper: #ede7d9;
-  --paper-dim: #cfc9bb;
-  --muted: #8d97ab;
-  --muted-dim: #626e85;
+  --paper: #451b34;
+  --paper-dim: #7a3a60;
+  --muted: #a1608c;
+  --muted-dim: #c084ac;
 
-  --saffron: #e2a03f;
-  --saffron-strong: #f0b158;
-  --saffron-dim: rgba(226, 160, 63, 0.14);
+  --saffron: #ff4f9a;
+  --saffron-strong: #ff2f87;
+  --saffron-dim: rgba(255, 79, 154, 0.14);
 
-  --sage: #6fa37e;
-  --sage-dim: rgba(111, 163, 126, 0.14);
+  --sage: #14b8a6;
+  --sage-dim: rgba(20, 184, 166, 0.14);
 
-  --rose: #c97a68;
-  --rose-dim: rgba(201, 122, 104, 0.16);
+  --rose: #ff6161;
+  --rose-dim: rgba(255, 97, 97, 0.16);
 
-  --chakra: #6c96bd;
-  --chakra-dim: rgba(108, 150, 189, 0.14);
+  --chakra: #8b5cf6;
+  --chakra-dim: rgba(139, 92, 246, 0.14);
 
   /* -- type -- */
-  --font-display: "Spectral", Georgia, "Times New Roman", serif;
-  --font-body: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fredoka", "Quicksand", "Segoe UI", sans-serif;
+  --font-body: "Quicksand", -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", "SF Mono", Consolas, monospace;
 
   /* -- structure -- */
-  --radius-sm: 4px;
-  --radius: 7px;
+  --radius-sm: 8px;
+  --radius: 14px;
   --border: 1px solid var(--ink-700);
   --sidebar-w: 252px;
   --safe-t: env(safe-area-inset-top, 0px);
@@ -119,6 +120,7 @@ button, input, select, textarea {
   flex-shrink: 0;
   background: var(--ink-900);
   border-right: var(--border);
+  box-shadow: 2px 0 14px rgba(255, 79, 154, 0.06);
   padding: 1.5rem 1.1rem calc(1.5rem + var(--safe-b));
   display: flex;
   flex-direction: column;
@@ -242,6 +244,7 @@ nav.nav {
   border: var(--border);
   border-radius: var(--radius);
   padding: 1.2rem 1.3rem;
+  box-shadow: 0 2px 14px rgba(255, 79, 154, 0.08);
 }
 
 .card + .card { margin-top: 1rem; }
@@ -273,7 +276,7 @@ nav.nav {
 /* -- hero -- */
 
 .hero {
-  background: linear-gradient(155deg, var(--ink-900) 0%, var(--ink-800) 100%);
+  background: linear-gradient(155deg, #fff5fa 0%, #ffdcee 100%);
   border: var(--border);
   border-radius: var(--radius);
   padding: 1.6rem 1.7rem;
@@ -282,6 +285,7 @@ nav.nav {
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  box-shadow: 0 4px 20px rgba(255, 79, 154, 0.12);
 }
 
 .hero-label {
@@ -547,7 +551,8 @@ nav.nav {
 .btn-primary {
   background: var(--saffron);
   border-color: var(--saffron);
-  color: #21170a;
+  color: #fff9fc;
+  box-shadow: 0 3px 10px rgba(255, 47, 135, 0.28);
 }
 .btn-primary:hover { background: var(--saffron-strong); }
 
