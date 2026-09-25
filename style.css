@@ -272,6 +272,17 @@ nav.nav {
 
 .card-head h2, .card-head h3 { margin: 0; }
 
+.planner-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.planner-filter input[type="date"] {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.82rem;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1.3fr 1fr;

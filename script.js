@@ -676,7 +676,15 @@
     fillList("taskOverdue", tasks.filter(t => !t.done && t.date < today).sort((a, b) => a.date.localeCompare(b.date)), "Nothing overdue.");
     fillList("taskToday", tasks.filter(t => !t.done && t.date === today).sort((a, b) => priorityRank(a.priority) - priorityRank(b.priority)), "Nothing scheduled for today.");
     fillList("taskUpcoming", tasks.filter(t => !t.done && t.date > today).sort((a, b) => a.date.localeCompare(b.date)), "Nothing else on the horizon yet.");
-    fillList("taskDone", tasks.filter(t => t.done).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20), "No completed tasks yet.");
+
+    const filterDate = document.getElementById("doneDateFilter").value;
+    let done = tasks.filter(t => t.done).sort((a, b) => b.date.localeCompare(a.date));
+    if (filterDate) {
+      done = done.filter(t => t.date === filterDate);
+      fillList("taskDone", done, `Nothing completed on ${fmtDateShort(filterDate)}.`);
+    } else {
+      fillList("taskDone", done.slice(0, 20), "No completed tasks yet.");
+    }
   }
 
   /* ---------------------------------------------------------------------
@@ -1039,6 +1047,12 @@
       toast("Entry added");
     });
     document.getElementById("caFilter").addEventListener("change", (e) => renderAffairs(e.target.value));
+
+    document.getElementById("doneDateFilter").addEventListener("change", renderPlanner);
+    document.getElementById("doneDateClear").addEventListener("click", () => {
+      document.getElementById("doneDateFilter").value = "";
+      renderPlanner();
+    });
 
     document.getElementById("testForm").addEventListener("submit", (e) => {
       e.preventDefault();

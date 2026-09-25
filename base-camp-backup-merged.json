@@ -1,0 +1,1746 @@
+{
+  "ui": {
+    "lastView": "dashboard",
+    "openPapers": {
+      "p_gs1": false,
+      "m_optional": true,
+      "m_optional_1": false,
+      "m_optional_2": false,
+      "m_essay": true
+    }
+  },
+  "settings": {
+    "name": "Niha",
+    "examDate": "2027-05-23",
+    "optionalSubject": "sociology"
+  },
+  "syllabus": [
+    {
+      "key": "p_gs1",
+      "title": "Prelims — GS Paper I",
+      "topics": [
+        {
+          "id": "vhx19ard",
+          "label": "Current events of national and international importance",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "jgpk5zqd",
+          "label": "History of India — Ancient & Medieval overview",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "opezwqdp",
+          "label": "History of India — Modern India & the National Movement",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "jv7n83u6",
+          "label": "Indian Geography — Physical",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "zbbu4asz",
+          "label": "Indian Geography — Human & Economic",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "iwz3goyp",
+          "label": "World Geography — Physical, Economic & Social",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "ostpy4at",
+          "label": "Indian Polity — Constitution & Political System",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "g5z1fovi",
+          "label": "Indian Polity — Panchayati Raj & Governance",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "61y8d6o0",
+          "label": "Indian Polity — Public Policy & Rights Issues",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "h1lsmhps",
+          "label": "Economic & Social Development — Sustainable Development",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "glo6bdhn",
+          "label": "Economic & Social Development — Poverty & Inclusion",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "hlxso4aq",
+          "label": "Economic & Social Development — Demographics & Social Sector Schemes",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "fu6n40oc",
+          "label": "Environment, Ecology, Biodiversity & Climate Change",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "uj97ghlh",
+          "label": "General Science — Physics & Chemistry basics",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "6rs4qomp",
+          "label": "General Science — Biology & everyday science",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "hqmomirj",
+          "label": "Science & Technology — developments and applications",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "p_csat",
+      "title": "Prelims — CSAT (Qualifying)",
+      "topics": [
+        {
+          "id": "bpp0ol1z",
+          "label": "Comprehension passages",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "fwgm6uap",
+          "label": "Interpersonal skills & communication",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "p84iwi7y",
+          "label": "Logical reasoning",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "ahvhei8b",
+          "label": "Analytical ability",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "m9rsqn0s",
+          "label": "Decision-making & problem-solving",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "k8dninnm",
+          "label": "General mental ability",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "qfi53f9u",
+          "label": "Basic numeracy (Class X level)",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "1lhnfrdb",
+          "label": "Data interpretation (charts, graphs, tables)",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "m_essay",
+      "title": "Mains — Essay",
+      "topics": [
+        {
+          "id": "wu4ces35",
+          "label": "Essay — Section A practice",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "uhs612j5",
+          "label": "Essay — Section B practice",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "rcixn5qp",
+          "label": "Building a quotes & examples bank",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "m_gs1",
+      "title": "Mains — GS Paper I",
+      "topics": [
+        {
+          "id": "nhd17b5t",
+          "label": "Indian culture — art forms, literature, architecture",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "10ldqwxe",
+          "label": "Modern Indian history (mid-18th century onwards)",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "swtqli8w",
+          "label": "Indian freedom struggle",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "ddiuejjj",
+          "label": "Post-independence consolidation & reorganisation",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "lu2y1aqp",
+          "label": "World history (18th century events onwards)",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "j92kx1qi",
+          "label": "Indian society — diversity & salient features",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "xjfoqzai",
+          "label": "Role of women & women's organisations",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "kuijsr0r",
+          "label": "Population & associated issues",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "m662oadq",
+          "label": "Poverty & developmental issues",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "azu6cb2j",
+          "label": "Urbanisation — problems & remedies",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "lglfgx2h",
+          "label": "Globalisation's effect on Indian society",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "ffx8rm1c",
+          "label": "Communalism, regionalism & secularism",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "451rjf5x",
+          "label": "World physical geography",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "evvbcc06",
+          "label": "Distribution of key natural resources",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "ne9da41g",
+          "label": "Factors for location of primary/secondary/tertiary industries",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "gw5s6kn8",
+          "label": "Geophysical phenomena — earthquakes, tsunami, volcanic activity, cyclones",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "m_gs2",
+      "title": "Mains — GS Paper II",
+      "topics": [
+        {
+          "id": "6ysuwhyf",
+          "label": "Indian Constitution — historical underpinnings, evolution, features",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "oa5q1zc6",
+          "label": "Amendments, significant provisions & basic structure",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "yz44ypak",
+          "label": "Functions & responsibilities of the Union and States",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "nlrcgwcg",
+          "label": "Separation of powers & dispute redressal mechanisms",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "3hgzhude",
+          "label": "Parliament & State legislatures — structure & functioning",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "6jl3oi8w",
+          "label": "Structure, organisation & functioning of the Judiciary",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "j8tmk2ia",
+          "label": "Government policies & interventions for development",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "g8w858ez",
+          "label": "Development processes — role of NGOs, SHGs, donors, civil society",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "ljo0bnof",
+          "label": "Welfare schemes for vulnerable sections",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "31s4l6vd",
+          "label": "Health, education & human resources — social sector issues",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "288udvn2",
+          "label": "Governance — e-governance, transparency, accountability",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "mu8ci3h7",
+          "label": "Role of civil services in a democracy",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "utxdjkay",
+          "label": "India and its neighbourhood — relations",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "upnutsvz",
+          "label": "Bilateral, regional & global groupings involving India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "c86gykfc",
+          "label": "Effect of developed/developing countries' policies on India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "qctl4po1",
+          "label": "International institutions, agencies and their mandate",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "m_gs3",
+      "title": "Mains — GS Paper III",
+      "topics": [
+        {
+          "id": "ktws1g49",
+          "label": "Indian economy — planning, resource mobilisation, growth",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "y03whftm",
+          "label": "Government budgeting",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "8otq6cp1",
+          "label": "Inclusive growth & issues arising from it",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "xeyqd5y9",
+          "label": "Land reforms in India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "9e50ncrn",
+          "label": "Agriculture — e-technology, storage, marketing, food processing",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "1jeo78cx",
+          "label": "Agriculture — subsidies, PDS, buffer stocks, food security",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "xl5h01n2",
+          "label": "Science & Technology — developments and applications",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "yhhu04ut",
+          "label": "IT, space, computers, robotics, nano-tech, biotech, IPR",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "9x9ewuj3",
+          "label": "Environmental impact assessment",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "fyee1ti3",
+          "label": "Disaster and disaster management",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "p4c503f1",
+          "label": "Internal security — linkages of extremism",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "fki1jsi2",
+          "label": "Role of media & social networking sites in internal security",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "2591u3yc",
+          "label": "Money laundering and its prevention",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "vfxwsxtw",
+          "label": "Border area security challenges",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "8hlxyl5k",
+          "label": "Organised crime & terrorism",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "apv9p7yg",
+          "label": "Security forces & agencies — mandate",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "m_gs4",
+      "title": "Mains — GS Paper IV",
+      "topics": [
+        {
+          "id": "7pe1wwpl",
+          "label": "Ethics and human interface",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "370xzhyl",
+          "label": "Attitude — content, structure, function",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "36tuavba",
+          "label": "Aptitude & foundational values for civil service",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "8t2ajl8m",
+          "label": "Emotional intelligence — concepts and utility",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "e2ll9pfk",
+          "label": "Contributions of moral thinkers and philosophers",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "o15imea5",
+          "label": "Probity in governance — concept of public service",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "m84ycgbj",
+          "label": "Case studies on the above",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "m_optional_1",
+      "title": "Mains — Optional Paper I",
+      "topics": [
+        {
+          "id": "50cgvkvx",
+          "label": "Sociology — the Discipline (scope, comparison with other disciplines)",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "fx5wkahd",
+          "label": "Sociology as Science — methods of inquiry",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "4y4v7dzu",
+          "label": "Research Methods & Analysis",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "ejq0ocyz",
+          "label": "Sociological Thinkers — Marx, Durkheim, Weber & others",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "wb00wpuu",
+          "label": "Stratification & Mobility",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "opylo5rt",
+          "label": "Works & Economic Life",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "bqdgmsa9",
+          "label": "Politics & Society",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "b0nryeor",
+          "label": "Religion & Society",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "x2niajbv",
+          "label": "Systems of Kinship",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "uynyc7gp",
+          "label": "Social Change in Modern Society",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "key": "m_optional_2",
+      "title": "Mains — Optional Paper II",
+      "topics": [
+        {
+          "id": "h1lctxdt",
+          "label": "Rural & Agrarian Social Structure in India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "lmn87ybs",
+          "label": "Caste System & its changing nature",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "95xbpx85",
+          "label": "Tribal communities in India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "alaalxps",
+          "label": "Social Classes in India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "maj3dww9",
+          "label": "Systems of Kinship in India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "pv4lsf4p",
+          "label": "Religion & Society in India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "mxkv8q8h",
+          "label": "Population Dynamics & demographic transition",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "hrftsayf",
+          "label": "Challenges of Social Transformation — crime, violence, illiteracy, poverty",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "l3dbqx2t",
+          "label": "Rural & Urban Transformation in India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        },
+        {
+          "id": "lhit4df9",
+          "label": "Social Movements in Modern India",
+          "done": false,
+          "rev": 0,
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "planner": {
+    "tasks": [
+      {
+        "id": "w41cftsr",
+        "title": "give iocl exam",
+        "date": "2026-09-24",
+        "subject": "",
+        "priority": "high",
+        "done": true
+      },
+      {
+        "id": "rj87ktol",
+        "title": "FLT-1",
+        "date": "2026-09-25",
+        "subject": "GS-2",
+        "priority": "high",
+        "done": false
+      },
+      {
+        "id": "d5tasz12",
+        "title": "FLT-2",
+        "date": "2026-09-25",
+        "subject": "GS-2",
+        "priority": "high",
+        "done": false
+      },
+      {
+        "id": "8r7zh7se",
+        "title": "Newspaper",
+        "date": "2026-09-25",
+        "subject": "",
+        "priority": "medium",
+        "done": false
+      },
+      {
+        "id": "rv7gz9tk",
+        "title": "CA quizzes",
+        "date": "2026-09-25",
+        "subject": "",
+        "priority": "medium",
+        "done": false
+      },
+      {
+        "id": "3x2ix8yb",
+        "title": "Art and culture live class",
+        "date": "2026-09-25",
+        "subject": "",
+        "priority": "medium",
+        "done": false
+      },
+      {
+        "id": "irw3b0nz",
+        "title": "25 pre pyqs",
+        "date": "2026-09-25",
+        "subject": "",
+        "priority": "medium",
+        "done": false
+      },
+      {
+        "id": "uux2f03n",
+        "title": "ethics class",
+        "date": "2026-09-25",
+        "subject": "",
+        "priority": "medium",
+        "done": false
+      },
+      {
+        "id": "wvy2zhkm",
+        "title": "Newspaper",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "i6pzl41p",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "8ts5u0zv",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "eikrfe7r",
+        "title": "Prelims PYQs",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "50ndqlrh",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "6h491y59",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "xsrex6mm",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "87tkjcov",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "rz117hzn",
+        "title": "Gym",
+        "date": "2026-09-10",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "83ti5qo4",
+        "title": "Newspaper",
+        "date": "2026-09-11",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "hjg0202a",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-11",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "h1act1x3",
+        "title": "Prelims PYQs",
+        "date": "2026-09-11",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "pi7rvz6t",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-11",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "qh1q0srf",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-11",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "1yqn7tx0",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-11",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "mxu0btbs",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-11",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "vuizs7s0",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "lwlkcnzw",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "ggumkx3w",
+        "title": "Newspaper",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "fsnc9ms6",
+        "title": "Prelims PYQs",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "u1w5n88u",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "ltlavy00",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "hzjbu4io",
+        "title": "Gym",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "vl6cl8ld",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-12",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "cq27ad5h",
+        "title": "Newspaper",
+        "date": "2026-09-13",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "yvrq3tgy",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-13",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "35lk6u82",
+        "title": "Prelims PYQs",
+        "date": "2026-09-13",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "1r1y6blg",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-13",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "mfxercys",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-13",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "mm4i12aj",
+        "title": "Newspaper",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "408y59z5",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "vbc3bc19",
+        "title": "Prelims PYQs",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "albkcctd",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "u5rstn81",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "xk4hxul2",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "aegtg8za",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "90j978fy",
+        "title": "Gym",
+        "date": "2026-09-14",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "hmm9em08",
+        "title": "Newspaper",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "3b9kks74",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "bzaxilfs",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "17i5z7js",
+        "title": "Prelims PYQs",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "85h9b9ac",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "a0vlookw",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "ob65guuo",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "niok4ojh",
+        "title": "Gym",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "4p3kj2vl",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-15",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "ozuciblg",
+        "title": "Newspaper",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "gu4xry0g",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "a3q2di0c",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "l9axy2zr",
+        "title": "Prelims PYQs",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "3j737die",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "keezu9u6",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "6wxh4bp3",
+        "title": "Gym",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "fbvyaia3",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-16",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "60hqd2hy",
+        "title": "Newspaper",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "8ybs1tju",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "6u1gef3d",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "5cnk1z06",
+        "title": "Prelims PYQs",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "m2rldvik",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "udo9oh4i",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "k7rqf6ul",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "rqwsmx7g",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "tp3bymib",
+        "title": "Gym",
+        "date": "2026-09-17",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "y7bin8bm",
+        "title": "Newspaper",
+        "date": "2026-09-18",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "qes5enoe",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-18",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "lehyk2wq",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-18",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "unla6l8q",
+        "title": "Prelims PYQs",
+        "date": "2026-09-18",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "37jdf1jq",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-18",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "xllyh4sw",
+        "title": "Gym",
+        "date": "2026-09-18",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "nu5kf9md",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-18",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "s2dzr1gt",
+        "title": "Newspaper",
+        "date": "2026-09-19",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "l7f7enyf",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-19",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "0tpuq7f7",
+        "title": "Prelims PYQs",
+        "date": "2026-09-19",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "1b64ha9j",
+        "title": "Gym",
+        "date": "2026-09-19",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "20lqqam8",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-19",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "febnvs4v",
+        "title": "Newspaper",
+        "date": "2026-09-20",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "eqcvl36o",
+        "title": "Prelims PYQs",
+        "date": "2026-09-20",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "815xco5h",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-20",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "nop19m49",
+        "title": "Newspaper",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "3e1ishfo",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "69d23yoq",
+        "title": "Prelims PYQs",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "lubh0g0h",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "58gg9xpw",
+        "title": "cil mock review",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "jsqdf0v2",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "n0vn2me5",
+        "title": "Gym",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "lxmc41ed",
+        "title": "GS live class (1.5 hrs)",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "k2lj2qna",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-21",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "icyv3ki7",
+        "title": "Newspaper",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "cehdm6x1",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "ul9wzd62",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "idkbx18t",
+        "title": "Prelims PYQs",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "6xy4984e",
+        "title": "GS Class 1 (1.5 hrs)",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "8kdzrfon",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "0srqi3kp",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "el6shatw",
+        "title": "study for iocl",
+        "date": "2026-09-22",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "6j72biqj",
+        "title": "Daily GS answer writing",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "8npvzdlj",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "qp4mqx56",
+        "title": "Prelims PYQs",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "a6mcgdga",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "qeucveh2",
+        "title": "Newspaper",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "rjw802ig",
+        "title": "Sociology class (1.5 hrs)",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "7ko5b59t",
+        "title": "ethics class 11",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "gcoeskj0",
+        "title": "study last minute notes",
+        "date": "2026-09-23",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "vv4nbkm4",
+        "title": "Current main GS subject studied",
+        "date": "2026-09-24",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "tjuqlzzn",
+        "title": "Prelims PYQs",
+        "date": "2026-09-24",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "44mginpa",
+        "title": "Current affairs quizzes",
+        "date": "2026-09-24",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      },
+      {
+        "id": "s53h1an6",
+        "title": "Newspaper",
+        "date": "2026-09-24",
+        "subject": "",
+        "priority": "medium",
+        "done": true
+      }
+    ]
+  },
+  "affairs": {
+    "entries": []
+  },
+  "tests": {
+    "scores": []
+  },
+  "goals": {
+    "items": [],
+    "habits": [
+      {
+        "id": "xlu42j2h",
+        "name": "Exercise"
+      },
+      {
+        "id": "mpj3ty79",
+        "name": "Reading (non-UPSC)"
+      },
+      {
+        "id": "v5g156tx",
+        "name": "Sleep 7+ hrs"
+      }
+    ],
+    "log": {}
+  },
+  "studyLog": {
+    "sessions": [
+      {
+        "id": "5aoibced",
+        "date": "2026-09-24",
+        "subject": "iocl",
+        "minutes": 300,
+        "note": ""
+      }
+    ]
+  }
+}
