@@ -802,13 +802,7 @@
   }
 
   function updateSidebarCandidate() {
-    const line = document.getElementById("candidateLine");
-    if (state.settings.name) {
-      document.getElementById("candidateName").textContent = state.settings.name;
-      line.style.display = "";
-    } else {
-      line.style.display = "none";
-    }
+    // Sidebar is icon-only now; candidate name is shown in Settings only.
   }
 
   /* ---------------------------------------------------------------------
@@ -833,14 +827,14 @@
     document.querySelectorAll(".nav-item").forEach(b => b.classList.toggle("active", b.dataset.view === name));
     state.ui.lastView = name;
     saveState();
-    closeSidebar();
     renderView(name);
     window.scrollTo(0, 0);
   }
 
-  function closeSidebar() {
-    document.getElementById("sidebar").classList.remove("open");
-    document.getElementById("scrim").classList.remove("show");
+  function stepView(delta) {
+    const i = VIEWS.indexOf(state.ui.lastView);
+    const next = VIEWS[(i + delta + VIEWS.length) % VIEWS.length];
+    setView(next);
   }
 
   let toastTimer;
@@ -997,11 +991,8 @@
 
   function wireNav() {
     document.querySelectorAll(".nav-item").forEach(b => b.addEventListener("click", () => setView(b.dataset.view)));
-    document.getElementById("menuBtn").addEventListener("click", () => {
-      document.getElementById("sidebar").classList.add("open");
-      document.getElementById("scrim").classList.add("show");
-    });
-    document.getElementById("scrim").addEventListener("click", closeSidebar);
+    document.getElementById("prevViewBtn").addEventListener("click", () => stepView(-1));
+    document.getElementById("nextViewBtn").addEventListener("click", () => stepView(1));
   }
 
   function wireForms() {

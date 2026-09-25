@@ -13,62 +13,53 @@
 </head>
 <body>
 
-<div class="scrim" id="scrim"></div>
-
 <div class="app">
 
-  <!-- Mobile top bar -->
-  <div class="topbar">
-    <span class="brand-mark">BASE<span class="dot">·</span>CAMP</span>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
-  </div>
-
-  <!-- Sidebar -->
+  <!-- Sidebar (icon rail) -->
   <aside class="sidebar" id="sidebar">
-    <div class="brand">
-      <div class="brand-mark">BASE<span class="dot">·</span>CAMP</div>
-      <div class="brand-tagline">UPSC preparation, tracked.</div>
-      <div class="brand-candidate" id="candidateLine" style="display:none;">Aspirant — <strong id="candidateName"></strong></div>
+    <div class="brand-icon" title="Base Camp">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 4 L20 19 L4 19 Z"/></svg>
     </div>
 
     <nav class="nav" id="nav">
-      <button class="nav-item active" data-view="dashboard">
+      <button class="nav-item active" data-view="dashboard" title="Dashboard" aria-label="Dashboard">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="7" height="7" rx="1.3"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.3"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.3"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.3"/></svg>
-        Dashboard
       </button>
-      <button class="nav-item" data-view="syllabus">
+      <button class="nav-item" data-view="syllabus" title="Syllabus" aria-label="Syllabus">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.2C4 4.5 4.6 4 5.3 4H12v16H5.3c-.7 0-1.3-.5-1.3-1.2V5.2Z"/><path d="M20 5.2c0-.7-.6-1.2-1.3-1.2H12v16h6.7c.7 0 1.3-.5 1.3-1.2V5.2Z"/></svg>
-        Syllabus
       </button>
-      <button class="nav-item" data-view="planner">
+      <button class="nav-item" data-view="planner" title="Planner" aria-label="Planner">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="4.5" width="17" height="16" rx="1.6"/><path d="M3.5 9.5h17M8 3v3M16 3v3"/></svg>
-        Planner
       </button>
-      <button class="nav-item" data-view="affairs">
+      <button class="nav-item" data-view="affairs" title="Current Affairs" aria-label="Current Affairs">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 5.5h11a2 2 0 0 1 2 2V19H6.5a2 2 0 0 1-2-2V5.5Z"/><path d="M17.5 8.5H19a1 1 0 0 1 1 1V17a2 2 0 0 1-2 2"/><path d="M7.5 9h5M7.5 12h5M7.5 15h3"/></svg>
-        Current Affairs
       </button>
-      <button class="nav-item" data-view="tests">
+      <button class="nav-item" data-view="tests" title="Test Scores" aria-label="Test Scores">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 20V4.5M4.5 20h15.5"/><rect x="7.5" y="13" width="3" height="7"/><rect x="12.5" y="9" width="3" height="11"/><rect x="17.5" y="6" width="3" height="14"/></svg>
-        Test Scores
       </button>
-      <button class="nav-item" data-view="goals">
+      <button class="nav-item" data-view="goals" title="Goals & Habits" aria-label="Goals &amp; Habits">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.3"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg>
-        Goals &amp; Habits
-      </button>
-      <button class="nav-item" data-view="settings">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="2.6"/><path d="M19.4 13.6a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V19.6a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H4.4a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34H10.5a1.7 1.7 0 0 0 1-1.55V4.4a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87V10.5a1.7 1.7 0 0 0 1.55 1h.09a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
-        Settings
       </button>
     </nav>
 
-    <div class="nav-footer">Data lives in this browser only. Export a backup from Settings now and then.</div>
+    <div class="nav-bottom">
+      <button class="nav-item" data-view="settings" title="Settings" aria-label="Settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="2.6"/><path d="M19.4 13.6a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V19.6a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .34-1.87 1.7 1.7 0 0 0-1.55-1H4.4a2 2 0 1 1 0-4h.09a1.7 1.7 0 0 0 1.55-1 1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34H10.5a1.7 1.7 0 0 0 1-1.55V4.4a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87V10.5a1.7 1.7 0 0 0 1.55 1h.09a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
+      </button>
+    </div>
   </aside>
 
   <!-- Main -->
   <main class="main">
+
+    <div class="topcrumb">
+      <button class="crumb-btn" id="prevViewBtn" aria-label="Previous section">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <button class="crumb-btn" id="nextViewBtn" aria-label="Next section">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
 
     <!-- DASHBOARD -->
     <section class="view active" id="view-dashboard">
@@ -124,6 +115,69 @@
       <div class="card">
         <div class="card-head"><h2>Syllabus progress</h2><button class="btn btn-sm" data-goto="syllabus">Open syllabus</button></div>
         <div id="dashSyllabusBars"></div>
+      </div>
+
+      <div class="explore-head"><h2>Explore Base Camp</h2></div>
+      <div class="explore-grid">
+        <button class="explore-card explore-mint" data-goto="syllabus">
+          <div class="explore-top">
+            <span class="explore-tag">SYLLABUS</span>
+            <span class="explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5.2C4 4.5 4.6 4 5.3 4H12v16H5.3c-.7 0-1.3-.5-1.3-1.2V5.2Z"/><path d="M20 5.2c0-.7-.6-1.2-1.3-1.2H12v16h6.7c.7 0 1.3-.5 1.3-1.2V5.2Z"/></svg></span>
+          </div>
+          <div class="explore-title">Cover the ground.</div>
+          <div class="explore-bottom">
+            <div class="explore-sub">Prelims + Mains, tracked topic by topic.</div>
+            <span class="explore-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </button>
+
+        <button class="explore-card explore-butter" data-goto="planner">
+          <div class="explore-top">
+            <span class="explore-tag">PLANNER</span>
+            <span class="explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="4.5" width="17" height="16" rx="1.6"/><path d="M3.5 9.5h17M8 3v3M16 3v3"/></svg></span>
+          </div>
+          <div class="explore-title">Plan your day.</div>
+          <div class="explore-bottom">
+            <div class="explore-sub">Tasks, due dates &amp; priorities in one list.</div>
+            <span class="explore-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </button>
+
+        <button class="explore-card explore-navy" data-goto="affairs">
+          <div class="explore-top">
+            <span class="explore-tag">CURRENT AFFAIRS</span>
+            <span class="explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 5.5h11a2 2 0 0 1 2 2V19H6.5a2 2 0 0 1-2-2V5.5Z"/><path d="M17.5 8.5H19a1 1 0 0 1 1 1V17a2 2 0 0 1-2 2"/><path d="M7.5 9h5M7.5 12h5M7.5 15h3"/></svg></span>
+          </div>
+          <div class="explore-title">Keep the diary.</div>
+          <div class="explore-bottom">
+            <div class="explore-sub">Log what matters, tagged by category.</div>
+            <span class="explore-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </button>
+
+        <button class="explore-card explore-amber" data-goto="tests">
+          <div class="explore-top">
+            <span class="explore-tag">TEST SCORES</span>
+            <span class="explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 20V4.5M4.5 20h15.5"/><rect x="7.5" y="13" width="3" height="7"/><rect x="12.5" y="9" width="3" height="11"/><rect x="17.5" y="6" width="3" height="14"/></svg></span>
+          </div>
+          <div class="explore-title">Watch the trend.</div>
+          <div class="explore-bottom">
+            <div class="explore-sub">Every mock score, charted over time.</div>
+            <span class="explore-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </button>
+
+        <button class="explore-card explore-blush" data-goto="goals">
+          <div class="explore-top">
+            <span class="explore-tag">GOALS &amp; HABITS</span>
+            <span class="explore-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.3"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg></span>
+          </div>
+          <div class="explore-title">Keep the streak.</div>
+          <div class="explore-bottom">
+            <div class="explore-sub">Sleep, exercise &amp; the rest of the routine.</div>
+            <span class="explore-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </div>
+        </button>
       </div>
     </section>
 
